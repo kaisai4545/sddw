@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>前世の動物チェック</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta property="og:title" content="前世の動物チェック" />
+  <meta property="og:description" content="あなたの前世の動物を診断しよう！" />
+  <meta property="og:image" content="assets/logo.png" />
+</head>
+<body>
+  <div class="overlay">
+    <img src="assets/bg.jpg" class="background" alt="background" />
+  </div>
+  <div class="container">
+    <img src="assets/logo.png" class="logo" alt="logo">
+    <h1>前世の動物チェック</h1>
+    <video id="video" autoplay playsinline></video>
+    <button id="start-btn">診断スタート！</button>
+    <div id="result" class="hidden"></div>
+    <div id="share" class="hidden">
+      <p>結果をシェアしよう！</p>
+      <a id="twitter-share" target="_blank">Twitterでシェア</a>
+    </div>
+  </div>
+  <canvas id="canvas" style="display:none;"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
